@@ -1,0 +1,7 @@
+
+<ul class="list-group" style = "max-width: 20rem;" >
+  <li id="li" class="list-group-item table-hover" *ngFor="let item of users" [routerLink]="[item.id]">
+    <a class="text-decoration-none">{{item.author}}</a>
+  </li>
+</ul>
+<router-outlet></router-outlet>
